@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     description:
       "Software engineer based in Bozeman, MT. Building tools for the outdoors, geospatial intelligence, and the web.",
     type: "website",
-    url: "https://macgreene14.github.io",
+    url: "https://macgreene14.github.io/macgreene-site",
   },
-  metadataBase: new URL("https://macgreene14.github.io"),
+  metadataBase: new URL("https://macgreene14.github.io/macgreene-site"),
 };
 
 export default function RootLayout({
