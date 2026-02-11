@@ -85,17 +85,29 @@ function useReveal() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+    // Small delay to ensure layout is ready, then observe
+    const timer = setTimeout(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            el.classList.remove("opacity-0");
+            el.classList.add("animate-fade-in-up");
+            observer.unobserve(el);
+          }
+        },
+        { threshold: 0.05, rootMargin: "50px" }
+      );
+      observer.observe(el);
+      // Fallback: if still hidden after 2s, reveal anyway
+      const fallback = setTimeout(() => {
+        if (el.classList.contains("opacity-0")) {
+          el.classList.remove("opacity-0");
           el.classList.add("animate-fade-in-up");
-          observer.unobserve(el);
         }
-      },
-      { threshold: 0.1 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
+      }, 2000);
+      return () => { observer.disconnect(); clearTimeout(fallback); };
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
   return ref;
 }
