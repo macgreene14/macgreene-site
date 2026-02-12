@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/macgreene-site",
+  // basePath not needed with custom domain (macgreene.com)
   images: { unoptimized: true },
 };
 
