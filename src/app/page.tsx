@@ -8,34 +8,35 @@ const projects = [
   {
     title: "Skimail",
     description:
-      "Daily ski condition reports delivered to your inbox. Aggregates resort data, weather forecasts, and snow reports into a personalized morning briefing.",
-    tags: ["Next.js", "AWS", "OpenAI", "Email"],
-    href: "https://skimail.co",
-  },
-  {
-    title: "Forest Fuel Finder",
-    description:
-      "Interactive map for locating and identifying forest fuels to support wildfire risk assessment. Built for field crews and land managers.",
-    tags: ["React", "Mapbox", "Firebase"],
-  },
-  {
-    title: "Air Label",
-    description:
-      "A nutrition-label-style breakdown of local air quality data. Makes AQI readings easy to understand at a glance.",
-    tags: ["React", "AQI API", "Data Viz"],
+      "Interactive ski resort explorer with live snow data, 3D globe visualization, and 127+ resorts across Ikon and Epic passes.",
+    tags: ["Next.js", "Mapbox GL", "Open-Meteo", "Tailwind"],
+    href: "https://macgreene14.github.io/skimail-mvp/",
   },
   {
     title: "OSM Intelligence",
     description:
-      "Geospatial analysis toolkit leveraging OpenStreetMap data for intelligence and infrastructure mapping.",
-    tags: ["Python", "OSM", "GIS"],
+      "Static vector tile viewer for OpenStreetMap trail and recreation data. PMTiles served from GitHub with MapLibre GL, color-coded by trail type with 3D terrain.",
+    tags: ["MapLibre GL", "PMTiles", "tippecanoe", "OSM"],
+    href: "https://macgreene14.github.io/osm-intelligence/",
   },
-  {
-    title: "Hire a Shovel",
-    description:
-      "Marketplace connecting homeowners with snow-shoveling services. On-demand labor platform for winter weather.",
-    tags: ["React Native", "Firebase", "Stripe"],
-  },
+  // {
+  //   title: "Forest Fuel Finder",
+  //   description:
+  //     "Interactive map for locating and identifying forest fuels to support wildfire risk assessment. Built for field crews and land managers.",
+  //   tags: ["React", "Mapbox", "Firebase"],
+  // },
+  // {
+  //   title: "Air Label",
+  //   description:
+  //     "A nutrition-label-style breakdown of local air quality data. Makes AQI readings easy to understand at a glance.",
+  //   tags: ["React", "AQI API", "Data Viz"],
+  // },
+  // {
+  //   title: "Hire a Shovel",
+  //   description:
+  //     "Marketplace connecting homeowners with snow-shoveling services. On-demand labor platform for winter weather.",
+  //   tags: ["React Native", "Firebase", "Stripe"],
+  // },
 ];
 
 const socials = [
