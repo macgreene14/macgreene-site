@@ -19,12 +19,13 @@ const projects = [
     tags: ["MapLibre GL", "PMTiles", "tippecanoe", "OSM"],
     href: "https://macgreene14.github.io/osm-intelligence/",
   },
-  // {
-  //   title: "Forest Fuel Finder",
-  //   description:
-  //     "Interactive map for locating and identifying forest fuels to support wildfire risk assessment. Built for field crews and land managers.",
-  //   tags: ["React", "Mapbox", "Firebase"],
-  // },
+  {
+    title: "Forest Fuel Finder",
+    description:
+      "Interactive map for locating and identifying forest fuels to support wildfire risk assessment. Built for field crews and land managers.",
+    tags: ["React", "Mapbox", "Firebase"],
+    href: "https://github.com/macgreene14/forest-fuel-finder",
+  },
   // {
   //   title: "Air Label",
   //   description:
